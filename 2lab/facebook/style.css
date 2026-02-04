@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* ===== ОСНОВА СТРАНИЦЫ ===== */
+body {
+  margin: 0;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+  background: #f0f2f5;
+}
+
+/* ===== ОСНОВНОЙ КОНТЕНТ ===== */
+.container {
+  flex: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+
+  padding: 40px;
+}
+
+.left {
+  max-width: 450px;
+}
+
+.logo {
+  color: #1877f2;
+  font-size: 56px;
+  margin-bottom: 10px;
+}
+
+.left p {
+  font-size: 20px;
+}
+
+/* ===== КАРТОЧКА ВХОДА ===== */
+.login-card {
+  width: 360px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  flex-direction: column;
+}
+
+.login-card label {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.login-card input {
+  margin-top: 5px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.login-btn {
+  margin-top: 15px;
+  padding: 10px;
+  font-size: 18px;
+
+  background: #1877f2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+
+  cursor: pointer;
+}
+
+.forgot {
+  margin: 15px 0;
+  text-align: center;
+  color: #1877f2;
+  text-decoration: none;
+}
+
+.create-btn {
+  background: #42b72a;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  margin-top: auto;
+  padding: 20px;
+  font-size: 12px;
+  color: #737373;
+}
+
+.footer a {
+  color: #737373;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.languages,
+.links {
+  margin-bottom: 10
+}
+
+.copy {
+  margin-top: 10px;
+}
+
+/* ===== АДАПТИВ ===== */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
