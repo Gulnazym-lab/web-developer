@@ -1,0 +1,52 @@
+.card {
+  border: 1px solid #e6e6e6;
+  border-radius: 14px;
+  padding: 14px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+h3 {
+  margin: 6px 0 8px;
+  font-size: 18px;
+}
+
+p {
+  margin: 6px 0;
+  line-height: 1.35;
+  font-size: 14px;
+}
+
+a {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.share {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.share button {
+  flex: 1;
+  padding: 7px 10px;
+  border: 1px solid #ddd;
+  background: #f7f7f7;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.share button:hover {
+  background: #eee;
+}
