@@ -1,0 +1,103 @@
+.app-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f0ff 0%, #f8f0fa 100%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.app-header {
+  text-align: center;
+  padding: 40px 20px 20px;
+  color: #4a4a4a;
+}
+
+.app-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: #6b4e71;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #8a6d8f;
+  margin: 0;
+}
+
+.categories-nav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.category-btn {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+  background: white;
+  color: #6b4e71;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(107, 78, 113, 0.1);
+  border: 1px solid transparent;
+}
+
+.category-btn:hover {
+  background: #f8f0fa;
+  border-color: #d8bfd8;
+  transform: translateY(-2px);
+}
+
+.category-btn.active {
+  background: #6b4e71;
+  color: white;
+}
+
+.main-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 20px 40px;
+}
+
+.welcome-message {
+  text-align: center;
+  background: white;
+  border-radius: 20px;
+  padding: 60px 40px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  border: 1px solid #f0e6f0;
+}
+
+.welcome-message h2 {
+  font-size: 2rem;
+  color: #4a4a4a;
+  margin-bottom: 15px;
+  font-weight: 400;
+}
+
+.welcome-message p {
+  font-size: 1.2rem;
+  color: #8a6d8f;
+}
+
+.category-content {
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  border: 1px solid #f0e6f0;
+}
+
+.category-title {
+  font-size: 1.8rem;
+  color: #6b4e71;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #f0e6f0;
+  font-weight: 400;
+}

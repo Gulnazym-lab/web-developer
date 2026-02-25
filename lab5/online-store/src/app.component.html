@@ -1,0 +1,33 @@
+<div class="app-container">
+  <header class="app-header">
+    <h1>Мой онлайн магазин</h1>
+    <p class="subtitle">Выберите категорию:</p>
+  </header>
+
+  <nav class="categories-nav">
+    <button *ngFor="let category of categories"
+            class="category-btn"
+            [class.active]="selectedCategoryId === category.id"
+            (click)="selectCategory(category.id)">
+      {{ category.name }}
+    </button>
+  </nav>
+
+  <main class="main-content">
+    <div *ngIf="!selectedCategoryId" class="welcome-message">
+      <h2>Добро пожаловать! </h2>
+      <p>Выберите категорию, чтобы посмотреть товары</p>
+    </div>
+
+    <div *ngIf="selectedCategoryId" class="category-content">
+      <h2 class="category-title">
+        {{ getCategoryName() }}
+      </h2>
+      
+      <app-product-list 
+        [products]="selectedCategoryProducts"
+        (productDeleted)="onProductDeleted($event)">
+      </app-product-list>
+    </div>
+  </main>
+</div>

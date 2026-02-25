@@ -1,0 +1,14 @@
+<div class="product-list-container">
+  <div *ngIf="products.length === 0" class="empty-state">
+    <h3>В этой категории нет товаров</h3>
+    <p>Выберите другую категорию</p>
+  </div>
+
+  <div *ngIf="products.length > 0" class="products-grid">
+    <app-product-item 
+      *ngFor="let product of products"
+      [product]="product"
+      (delete)="onDeleteProduct(product.id)">
+    </app-product-item>
+  </div>
+</div>

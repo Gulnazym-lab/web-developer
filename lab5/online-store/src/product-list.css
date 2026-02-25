@@ -1,0 +1,26 @@
+.product-list-container {
+  min-height: 400px;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  background: #faf5fa;
+  border-radius: 15px;
+}
+
+.empty-state h3 {
+  font-size: 1.5rem;
+  color: #6b4e71;
+  margin-bottom: 10px;
+}
+
+.empty-state p {
+  color: #8a6d8f;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 25px;
+}
