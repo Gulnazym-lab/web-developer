@@ -1,0 +1,24 @@
+<div class="album-detail">
+  @if (loading) {
+    <p class="loading">Loading album...</p>
+  } @else if (error) {
+    <p class="error">{{ error }}</p>
+    <button (click)="goBack()">Back to Albums</button>
+  } @else if (album) {
+    <h1>Album #{{ album.id }}</h1>
+    <p>User ID: {{ album.userId }}</p>
+    
+    <div class="edit-form">
+      <label>Title:</label>
+      <input [(ngModel)]="editedTitle" type="text" />
+      
+      <div class="buttons">
+        <button (click)="save()" [disabled]="editedTitle === album.title">
+          Save
+        </button>
+        <button (click)="viewPhotos()">View Photos</button>
+        <button (click)="goBack()">Back</button>
+      </div>
+    </div>
+  }
+</div>

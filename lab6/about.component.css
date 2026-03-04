@@ -1,0 +1,21 @@
+.about {
+  padding: 2rem;
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+.about h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-primary, #1a1a1a);
+}
+
+.about p {
+  margin-bottom: 0.75rem;
+  color: var(--text-secondary, #444);
+}
+
+.about .description {
+  margin-top: 1.5rem;
+  line-height: 1.6;
+}

@@ -1,0 +1,25 @@
+<div class="photos-container">
+  <h2>Photos - Album #{{ albumId }}</h2>
+  
+  <button (click)="goBack()" class="back-btn">← Back to Album</button>
+
+  @if (loading) {
+    <p class="loading">Loading photos...</p>
+  } @else if (photos.length === 0) {
+    <p class="empty">No photos found</p>
+  } @else {
+    <div class="photo-grid">
+      @for (photo of photos; track photo.id) {
+        <div class="photo-card">
+          <figure class="photo-card">
+  <div class="photo-placeholder">
+    {{ photo.title | slice:0:1 | uppercase }}
+  </div>
+  <figcaption>{{ photo.title }}</figcaption>
+</figure>
+          <p class="photo-title">{{ photo.title | slice:0:30 }}...</p>
+        </div>
+      }
+    </div>
+  }
+</div>

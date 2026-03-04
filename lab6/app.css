@@ -1,0 +1,35 @@
+:host {
+  display: block;
+  min-height: 100vh;
+}
+
+.nav {
+  display: flex;
+  gap: 0.5rem;
+  padding: 1rem 1.5rem;
+  background: var(--nav-bg, #1a1a1a);
+  border-bottom: 1px solid var(--border, #333);
+}
+
+.nav a {
+  color: var(--nav-link, #e0e0e0);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.nav a:hover {
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.nav a.active {
+  color: white;
+  background: var(--accent, #1976d2);
+}
+
+main {
+  padding: 0;
+  min-height: calc(100vh - 56px);
+}

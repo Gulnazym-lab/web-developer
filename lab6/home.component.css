@@ -1,0 +1,33 @@
+.home {
+  text-align: center;
+  padding: 2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.home h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--text-primary, #1a1a1a);
+}
+
+.description {
+  color: var(--text-secondary, #555);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.browse-btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: var(--accent, #1976d2);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.browse-btn:hover {
+  background: var(--accent-hover, #1565c0);
+}

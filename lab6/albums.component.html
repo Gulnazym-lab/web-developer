@@ -1,0 +1,48 @@
+<div class="albums">
+  <h1>Albums</h1>
+
+  <!-- Форма добавления нового альбома -->
+  <div class="add-album">
+    <input
+      type="text"
+      [(ngModel)]="newAlbumTitle"
+      placeholder="New album title"
+      class="add-input"
+      (keydown.enter)="addAlbum()"
+    />
+    <button
+      type="button"
+      class="add-btn"
+      (click)="addAlbum()"
+      [disabled]="adding || !newAlbumTitle.trim()"
+    >
+      {{ adding ? 'Adding…' : 'Add album' }}
+    </button>
+  </div>
+
+  @if (loading) {
+    <p class="loading">Loading albums…</p>
+  } @else if (error) {
+    <p class="error">{{ error }}</p>
+  } @else if (albums.length === 0) {
+    <p class="empty">No albums to display.</p>
+  } @else {
+    <ul class="album-list">
+      @for (album of albums; track album.id) {
+        <li>
+          <a [routerLink]="['/albums', album.id]" class="album-link">
+            <span class="album-id">#{{ album.id }}</span>
+            <span class="album-title">{{ album.title }}</span>
+          </a>
+          <button
+            type="button"
+            class="delete-btn"
+            (click)="onDelete(album.id, $event)"
+          >
+            Delete
+          </button>
+        </li>
+      }
+    </ul>
+  }
+</div>
