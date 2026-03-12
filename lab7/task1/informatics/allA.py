@@ -1,4 +1,4 @@
-//a2
+#a2
 a = int(input())
 b = int(input())
 
@@ -8,7 +8,7 @@ for i in range(a, b+1):
 
 
 
-//a3
+#a3
 
 import math
 a = int(input())
@@ -20,7 +20,7 @@ while(a > 0):
     a-=1
 
 
-//a4
+#a4
 a = int(input())
 arr = list(map(int,(input().split())))
 ans = []
@@ -31,7 +31,7 @@ for i in range(a):
 print(ans)
 
 
-//a5
+#a5
 
 def min(a , b , c , d):
     if( a < b and a < c and a < d):
